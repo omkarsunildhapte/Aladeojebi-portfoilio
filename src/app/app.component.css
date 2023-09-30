@@ -1,0 +1,22 @@
+.pro {
+  background-image: linear-gradient(124deg, #084b7c, #14171d, #684232);
+  width: 100vw;
+  height: 100vh;
+}
+@media (max-width: 768px) {
+  .pro {
+    height: 100%;
+    width: auto;
+  }
+}
+
+@media (min-width: 769px) {
+  /* Styles for desktop devices */
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .pro {
+    height: 100%;
+    width: auto;
+  }
+}

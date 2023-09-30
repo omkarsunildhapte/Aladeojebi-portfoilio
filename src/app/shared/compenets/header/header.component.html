@@ -1,0 +1,33 @@
+<ng-container *ngIf="show">
+    <app-main></app-main>
+</ng-container>
+<div class="mobile-header z-1 position-relative px-3 py-3 d-flex justify-content-between" style="width: 95vw;">
+    <div>
+        <h1 class="fw-bolder brown">{{data.name}}</h1>
+    </div>
+    <div>
+        <button class="bg-transparent border-0" (click)="this.toogle = !this.toogle">
+            <img src="./../../assets/logo/header.svg" alt="" class="logoColor">
+        </button>
+    </div>
+</div>
+<div class="desktop-menu container-fluid d-flex z-1  position-relative">
+    <div class="col py-4 ps-5 d-flex">
+        <h1 class="text-white">Aladeojebi opeyemi</h1>
+    </div>
+    <div class="col py-4 d-flex">
+        <a class="text-decoration-none text-white px-3 active" routerLink="">Home</a>
+        <a class="text-decoration-none text-white px-3" routerLink="/sobre">Sobre</a>
+        <a class="text-decoration-none text-white px-3" routerLink="/com">Currículo</a>
+        <a class="text-decoration-none text-white px-3" routerLink="/portfolio">Portfolio</a>
+        <a class="text-decoration-none text-white px-3" routerLink="/contacto">Contacto</a>
+    </div>
+</div>
+<div [ngClass]="{'active': toogle}" class="sidemenu active">
+    <a routerLink="">Home</a>
+    <a routerLink="/sobre">Sobre</a>
+    <a routerLink="/com">Currículo</a>
+    <a routerLink="/portfolio">Portfolio</a>
+    <a routerLink="/contacto">Contacto</a>
+</div>
+<router-outlet></router-outlet>

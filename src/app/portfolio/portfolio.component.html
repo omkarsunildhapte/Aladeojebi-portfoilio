@@ -1,0 +1,35 @@
+<app-header [show]="true"></app-header>
+<div class="container">
+    <div class="row">
+        <div class="card bg-tr">
+            <div class="card-body d-flex flex-column">
+                <div class="row">
+                    <div class="d-flex">
+                        <div class="line"></div>
+                        <p class="card-title px-2 fw-semibold text-white">Portfolio</p>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="d-flex justify-content-center">
+                        <a class="tabs" (click)="showAllData()">All</a>
+                        <a class="tabs" *ngFor="let category of getAllCategories()"
+                            (click)="showCategoryData(category)">{{ category }}</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col" *ngFor="let card of displayedData">
+                        <div class="card bg-transparent">
+                            <div class="card-body d-flex flex-column">
+                                <img [src]="card.imageUrl" alt="" class="port">
+                                <span class="text-white bottom-0 bg-titn">
+                                    {{ card.text }}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

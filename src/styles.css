@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700&display=swap");
+
+body {
+  background-image: linear-gradient(124deg, #084b7c, #14171d, #684232);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #c6c4c4 !important;
+  font-family: Exo !important;
+}

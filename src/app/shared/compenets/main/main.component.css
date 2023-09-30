@@ -1,0 +1,36 @@
+.pro {
+  height: 530px;
+  opacity: 0.5;
+  filter: drop-shadow(7px 9px 16px #08b1f4);
+}
+@media (max-width: 768px) {
+  .pro {
+    height: 400px;
+    width: 100%;
+    margin-top: 248px;
+  }
+}
+
+@media (min-width: 769px) {
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .des {
+    flex: auto !important;
+    display: flex;
+    justify-content: center;
+  }
+  .pro {
+    width: auto;
+  }
+}
+@media (min-width: 712px) and (max-width: 1024px) {
+  .des {
+    flex: auto !important;
+    display: flex;
+    justify-content: center;
+  }
+  .pro {
+    width: auto;
+  }
+}

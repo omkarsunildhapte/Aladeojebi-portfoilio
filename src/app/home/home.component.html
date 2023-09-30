@@ -1,0 +1,43 @@
+<app-main></app-main>
+<div class="container-fluid position-relative z-1">
+  <div class="mobile-header">
+    <app-header [show]="false"></app-header>
+  </div>
+  <div class="mobile-header">
+    <div class="d-flex align-items-center flex-column">
+      <div>
+        <p class="brown padding-tp">{{data.jobtitle}}</p>
+      </div>
+      <span class="text-white text-center"> {{data.description}}</span>
+    </div>
+  </div>
+  <div class="row pt-5">
+    <div class="col">
+    </div>
+    <div class="col mobile-view-block">
+      <div class="d-flex justify-content-center align-items-center pft">
+        <div class="d-flex flex-column">
+          <div class="d-flex flex-column">
+            <h1 class="text-white fw-bolder">{{data.name}}</h1>
+            <p class="brown">{{data.jobtitle}}</p>
+            <span class="text-white"> {{data.description}}</span>
+          </div>
+          <div class="navigation pt-4 sd">
+            <a class="text-decoration-none text-white px-3" routerLink="">Home</a>
+            <a class="text-decoration-none text-white px-3" routerLink="./sobre">Sobre</a>
+            <a class="text-decoration-none text-white px-3" routerLink="./com">Currículo</a>
+            <a class="text-decoration-none text-white px-3" routerLink="./portfolio">Portfolio</a>
+            <a class="text-decoration-none text-white px-3" routerLink="./contacto">Contacto</a>
+          </div>
+          <div class="d-flex pt-4" id="social-media">
+            <div class="px-3 border-1" *ngFor="let social of socialMedia; let i = index">
+              <div class="icon-border">
+                <a [href]="social.link"><img class="ssd" [src]="social.logo"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+.pft {
+  padding-top: 200px;
+}
+.sd a:hover {
+  border-bottom: 4px solid #684232;
+}
+.icon-border {
+  border-radius: 100%;
+  border: 2px solid #0669ad;
+}
+.ssd {
+  margin: 8px;
+}
+.padding-tp {
+  font-size: 27px;
+}
+@media (max-width: 768px) {
+  .mobile-view-block {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-header {
+    display: none !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+}
